@@ -3,14 +3,13 @@
 Every configurations and api keys are in .env file
 need to create .env file in root directory with following keys
 
-##PORT = 3001
-##MONGO_URL = 
-##DATABASE = 
-##DATABASE_USER = 
-##DATABASE_PASSWORD = 
-
-##ACCESS_TOKEN_SECRET = 
-##REFRESH_TOKEN_SECRET = 
+PORT = 3001
+MONGO_URL = 
+DATABASE = 
+DATABASE_USER = 
+DATABASE_PASSWORD = 
+ACCESS_TOKEN_SECRET = 
+REFRESH_TOKEN_SECRET = 
 
 
 
@@ -22,7 +21,7 @@ npm install
 
 npm start
 
-#refresh token
+## refresh token
 
 helpers/jwtHelper.js 
 
