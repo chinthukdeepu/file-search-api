@@ -23,7 +23,7 @@ Content-Type: application/json
 
 {
     "email":"chinthu2@gmail.com",
-    "password":"Files$0918Data"
+    "password":"dummypassword"
 }
 
 
@@ -33,8 +33,8 @@ POST http://localhost:3001/auth/register
 Content-Type: application/json
 
 {
-    "email":"chinthu@gmail.com",
-    "password":"password",
+    "email":"sample@gmail.com",
+    "password":"dummypassword",
     "full_name":"chinthu k deepu"
 }
 
