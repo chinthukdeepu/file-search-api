@@ -26,3 +26,9 @@ npm start
 helpers/jwtHelper.js 
 
 > can manage token expiry time on this 
+
+##generate new keys in case of any emergency
+> node helpers/generateKeys.js
+> copy and past these keys in .env
+
+
