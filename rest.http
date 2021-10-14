@@ -1,0 +1,54 @@
+### create a file
+POST http://localhost:3001/file/add
+Content-Type: application/json
+Autherization:Barer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MzQxNDI1OTUsImV4cCI6MTYzNDE0NjE5NSwiYXVkIjoiNjE2NmZiM2QxMzAyNmU1OTkyMTVhNTUyIiwiaXNzIjoidXNlciJ9.vfR_EwF-5GHNl17aShBmER0kJtyy-YDHZMCXmFY_kC0
+
+{
+    "title":"test file name 10",
+    "file_name":"test_file_10.pdf"
+}
+
+
+
+### search file
+GET http://localhost:3001/file?keyword=
+Content-Type: application/json
+Autherization:Barer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MzQyMTAyMzAsImV4cCI6MTYzNDIxMzgzMCwiYXVkIjoiNjE2NmZiNTIxMzAyNmU1OTkyMTVhNTU1IiwiaXNzIjoidXNlciJ9.rSo-RVL92oX1L2u9Nxg7QSg6h7PhkWQvgqv1OkjeTZg
+
+
+
+### login
+POST http://localhost:3001/auth/login
+Content-Type: application/json
+
+{
+    "email":"chinthu2@gmail.com",
+    "password":"Files$0918Data"
+}
+
+
+
+### register
+POST http://localhost:3001/auth/register
+Content-Type: application/json
+
+{
+    "email":"chinthu@gmail.com",
+    "password":"password",
+    "full_name":"chinthu k deepu"
+}
+
+
+### refresh token
+
+POST http://localhost:3001/auth/refresh-token
+Content-Type: application/json
+
+{
+    "refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MzQxMTQ3NTIsImV4cCI6MTY2NTY3MjM1MiwiYXVkIjoiNjE2NWU1ZmQxNDY5ZWQ1MTAzYjhlNTA4IiwiaXNzIjoiY2hpbnRodWtkZXB1In0.uBoujDH2ajn8V7JssbXv8Lc-Lil7iBiZ6a4x_ox6g-8"
+}
+
+
+### logout
+
+DELETE http://localhost:3001/auth/logout
